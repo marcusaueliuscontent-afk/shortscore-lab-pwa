@@ -1,0 +1,64 @@
+{
+  "name": "ShortScore Lab",
+  "short_name": "ShortScore",
+  "description": "Review and improve short-form packaging from an upload, paste, or shared link.",
+  "id": ".",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "display_override": ["standalone", "browser"],
+  "background_color": "#070A13",
+  "theme_color": "#070A13",
+  "orientation": "portrait",
+  "categories": ["productivity", "social", "utilities"],
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "pwa/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "pwa/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "pwa/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Import Shared Short",
+      "short_name": "Import",
+      "description": "Open ShortScore ready to paste or receive shared short-form context.",
+      "url": "?import=shortcut",
+      "icons": [
+        {
+          "src": "pwa/icon-192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": ".",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "sharedText",
+      "url": "sourceUrl"
+    }
+  }
+}
